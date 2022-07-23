@@ -1,0 +1,13 @@
+{% extends "root.html" %}
+
+{% block title %}output preview{% endblock %}
+
+{% block content %}
+
+    <div style="padding: 100px;font-family: monospace;word-wrap: break-word;">
+        {% for line in content %}
+            {{ line }}<br>
+        {% endfor %}
+    </div>
+
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends "root.html" %}
+
+{% block title %}bppML{% endblock %}
+
+{% block content %}
+<div id="mainrow" class="row justify-content-md-center">
+    <div id="leftcolumn" class="col col-lg-2">
+        <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+    <a href="/bppml" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+      <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      <span class="fs-5 fw-semibold">BppML</span>
+    </a>
+    <ul class="list-unstyled ps-0">
+        {% for section in usage %}
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#{{ section.replace(' ','') }}" aria-expanded="true">
+                  {{ section }}
+                </button>
+                <div class="collapse show" id="{{ section.replace(' ','') }}" style="">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      {% for el in usage[section] %}
+                        <li><a onclick="{{ el["function"] + "('" + el["name"] + "')" }}" class="link-dark rounded element" value="load_docu('{{ el['docuSpanId'] }}')">{{ el["name"] }}</a></li>
+                      {% endfor %}
+                  </ul>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+    </div>
+    <div id= middlecolumn class="col-6">
+        <img class="backgroundImage" src="/static/images/background.jpg">
+        <form action="/jobs/submit/{{ soft }}" method="post" id="mainform" class="was-validation" enctype="multipart/form-data">
+            <div class="container" id="folder1">
+                <div class="helpText">Glissez des éléments de formulaire ici</div>
+            </div>
+            <div id="waitingRoom"></div>
+            <button type="submit" class="btn btn-success execute_button">Execute</button>
+        </form>
+    </div>
+    <div id="rightcolumn" class="col">
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script>
+//fonctions à exec au démarrage
+{% for def in default %}
+    eval('{{ def["function"] }}'+'('+'"{{ def["name"] }}"'+',true)')
+{% endfor %}
+var docu = `{{ docu|safe }}`
+</script>
+{% endblock %}

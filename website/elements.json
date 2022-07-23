@@ -1,0 +1,137 @@
+{
+  "Alphabet": {
+    "name": "Alphabet",
+    "function": "alphabet",
+    "docuSpanId": "Setting-alphabet-and-genetic-code"
+  },
+  "Input Alignement": {
+    "name": "Input Alignement",
+    "function": "inputDataAlignement",
+    "docuSpanId": "Reading-sequences"
+  },
+  "Input tree": {
+    "name": "Input tree",
+    "function": "inputTreeUser",
+    "docuSpanId": "Reading-trees"
+  },
+  "Input random tree": {
+    "name": "Input random tree",
+    "function": "inputRandomTree",
+    "docuSpanId": "Reading-trees"
+  },
+  "Bpp configuration file": {
+    "name": "Bpp configuration file",
+    "function": "bppConfFile",
+    "docuSpanId": "all"
+  },
+  "HKY85": {
+    "name": "HKY85",
+    "function": "HKY85",
+    "docuSpanId": "model-nucleotide-HKY85"
+  },
+  "K80": {
+    "name": "K80",
+    "function": "K80",
+    "docuSpanId": "model-nucleotide-K80"
+  },
+  "JC69": {
+    "name": "JC69",
+    "function": "JC69",
+    "docuSpanId": "model-nucleotide-JCnuc"
+  },
+  "T92": {
+    "name": "T92",
+    "function": "T92",
+    "docuSpanId": "model-nucleotide-T92"
+  },
+  "Mixture model": {
+    "name": "Mixture",
+    "function": "modelMixture",
+    "docuSpanId": "model-general-Mixture"
+  },
+  "Scenario": {
+    "name": "Scenario",
+    "function": "scenario",
+    "docuSpanId": "Scenarios-with-mixture-models"
+  },
+  "Path": {
+    "name": "Path",
+    "function": "path",
+    "docuSpanId": "Scenarios-with-mixture-models"
+  },
+  "Gamma distribution": {
+    "name": "Gamma",
+    "function": "gammaDistribution",
+    "docuSpanId": ""
+  },
+  "Constant rate": {
+    "name": "Constant",
+    "function": "constantRate",
+    "docuSpanId": ""
+  },
+  "Fixed": {
+    "name": "Fixed",
+    "function": "fixedFreqSet",
+    "docuSpanId": ""
+  },
+  "GC": {
+    "name": "GC",
+    "function": "GCFreq",
+    "docuSpanId": ""
+  },
+  "Site substitution": {
+    "name": "Site substitution",
+    "function": "siteSubstitutionProcess",
+    "docuSpanId": ""
+  },
+  "Sequence substitution": {
+    "name": "Sequence substitution",
+    "function": "sequenceSubstitutionProcess",
+    "docuSpanId": ""
+  },
+  "Single phylo": {
+    "name": "Single phylo",
+    "function": "singlePhylo",
+    "docuSpanId": ""
+  },
+  "Numerical parameter": {
+    "name": "Numerical parameter",
+    "function": "numParamEstimation",
+    "docuSpanId": ""
+  },
+  "Bootstrap": {
+    "name": "Bootstrap",
+    "function": "bootstrapAnalysis",
+    "docuSpanId": ""
+  },
+  "Output infos": {
+    "name": "Output infos",
+    "function": "outputInfos",
+    "docuSpanId": ""
+  },
+  "Output tree": {
+    "name": "Output tree",
+    "function": "outputTree",
+    "docuSpanId": ""
+  },
+  "Output estimates": {
+    "name": "Output estimates",
+    "function": "outputEstimates",
+    "docuSpanId": ""
+  },
+  "Optimization profiler": {
+    "name": "Optimization profiler",
+    "function": "optimizationProfiler",
+    "docuSpanId": ""
+  },
+  "Optimization backup": {
+    "name": "Optimization backup",
+    "function": "optimizationBackup",
+    "docuSpanId": ""
+  },
+  "Output bootstrap": {
+    "name": "Output bootstrap",
+    "function": "outputBootstrap",
+    "docuSpanId": ""
+  }
+}
