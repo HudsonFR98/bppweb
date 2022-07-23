@@ -36,7 +36,10 @@ done
 
 # the webapp
 
-sudo wget
+sudo wget https://github.com/HudsonFR98/bppweb/archive/refs/heads/main.zip
+unzip main.zip
+rm main.zip
+mv bppweb-main bppweb
 
 # python
 
