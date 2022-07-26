@@ -12,7 +12,7 @@ Make sure bppsuite in installed by executing the following command:
 bppml
 ```
 
-#### Use slurm
+#### Install slurm
 
 * The webapp uses slurm to shedule bpp jobs. To use a local slurm configuration, follow this tutorial : 
 https://blog.llandsmeer.com/tech/2020/03/02/slurm-single-instance.html
@@ -23,6 +23,22 @@ Make sure you dont get and error when running the following command:
 ```bash
 srun bppml
 ```
+
+#### Run the interface
+
+```bash
+python3 server.py
+```
+You can now access the app at: http://127.0.0.1:5000
+
+#### Deploy the interface on a dedicated webserver
+
+This is an optional step, unless you want multiple users to access the interface.
+For this, you can use Apache and mod_wsgi: https://flask.palletsprojects.com/en/2.0.x/deploying/mod_wsgi/
+
+Don't forget to install slurm and Bpp programs/libs on the same server.
+
+
 
 ## Add bpp objects to the webapp
 
