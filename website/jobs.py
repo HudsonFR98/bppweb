@@ -139,4 +139,4 @@ def download(filename):
     session_id = request.cookies.get('session')  # qui est l'utilisateur?
     uploads = os.path.join(abspath, current_app.config['UPLOAD_FOLDER'], session_id)
     print(uploads, filename)
-    return send_from_directory(directory=uploads, path=filename)
+    return send_from_directory(uploads, filename)
